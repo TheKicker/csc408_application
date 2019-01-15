@@ -15,10 +15,10 @@ class MoviesTableSeeder extends Seeder
         DB::table('movies')->delete();
         
         Movie::create(array(
-            'title' => 'Crazy Rich Asians',
-            'rating' => 'PG-13',
-            'length' => 120,
-            'description' => "Chinese-American New Yorker Rachel travels to Singapore with her boyfriend Nick to attend his best friend's wedding only to discover he comes from one of Asia\'s most wealthy, prominent families. She must stand up to his judgemental mother, who wants nothing more than to break them up." ,
+            'title' => 'Toy Story',
+            'rating' => 'G',
+            'length' => 81,
+            'description' => "A 1995 American computer-animated buddy adventure comedy film -- Taking place in a world where anthropomorphic toys come to life when humans aren\'t present, its plot focuses on the relationship between an old-fashioned pullstring cowboy doll named Woody and an astronaut action figure Buzz Lightyear as they evolve from rivals competing for the affections of their owner Andy to friends who work together to be reunited with him after being separated from him.",
             'onDVD' => 1,
             'onBluRay' => 1,
         ));
