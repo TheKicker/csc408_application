@@ -32,7 +32,14 @@ class UsersTableSeeder extends Seeder
         User::create(array(
             'name' => 'Haylee Heaton',
             'email' => 'haylee.heaton@geneva.edu',
-            'password' => Hash::make('Geneva2019'),
+            'password' => Hash::make('Password123'),
+            'isAdmin' => 0,
+        ));
+
+        User::create(array(
+            'name' => 'Spencer York',
+            'email' => 'spencer.york@geneva.edu',
+            'password' => Hash::make('Password123'),
             'isAdmin' => 0,
         ));
 
@@ -81,7 +88,7 @@ class UsersTableSeeder extends Seeder
         User::create(array(
             'name' => 'Jeff Bezos',
             'email' => 'Jeffy@Amazon.com',
-            'password' => Hash::make('IUsedToSellBooks'),
+            'password' => Hash::make('ISellBooks'),
             'isAdmin' => 0,
         ));
 
@@ -93,7 +100,7 @@ class UsersTableSeeder extends Seeder
         ));
 
         User::create(array(
-            'name' => 'Jaxon Teller',
+            'name' => 'Jackson Teller',
             'email' => 'Jax@SAMCROW.com',
             'password' => Hash::make('RedwoodOriginal'),
             'isAdmin' => 0,
