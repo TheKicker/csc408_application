@@ -186,15 +186,6 @@ class MoviesTableSeeder extends Seeder
         ));
 
         Movie::create(array(
-            'title' => 'The Sons of Anarchy',
-            'rating' => 'R',
-            'length' => 60,
-            'description' => "A ficitional action TV Show on FX centering on both the personal and family life of Jackson \"Jax\" Teller (Charlie Hunnam) and on SAMCRO (Sons of Anarchy Motorcycle Club, Redwood Original). SAMCRO is involved with gun-running in the western United States, and deals with rival gangs, politicians and the authorities. As vice president and later president of SAMCRO, Jax struggles to manage the club and the legacy of its founder, his late father John Teller. SAMCRO is said to resemble the Hells Angels Motorcycle Club.",
-            'onDVD' => 1,
-            'onBluRay' => 1,
-        ));
-
-        Movie::create(array(
             'title' => 'Mad Men',
             'rating' => 'PG-13',
             'length' => 55,

@@ -140,5 +140,7 @@ class UsersTableSeeder extends Seeder
             'password' => Hash::make('qwerqwer'),
             'isAdmin' => 0,
         ));
+
+
     }
 }
