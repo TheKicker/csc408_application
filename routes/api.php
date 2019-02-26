@@ -13,6 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/users/{id}', 'ApiUserController@show');
+Route::get('/users/{id}/rentals', 'ApiUserController@rentals');
+Route::resource('/users', 'ApiUserController');
+
+Route::get('/movies/{id}', 'ApiMovieController@show');
+Route::get('/movies/{id}/rentals', 'ApiMovieController@rentals');
+Route::resource('/movies', 'ApiMovieController');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

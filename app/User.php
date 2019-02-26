@@ -3,6 +3,7 @@
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Movie;
 
 class User extends Authenticatable
 {
@@ -25,4 +26,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function rentals()
+    {
+        return $this->belongsToMany('App\Movie', 'rentals');
+    }
 }
